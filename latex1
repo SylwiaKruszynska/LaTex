@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\title{Moja praca}
+\author{Sylwia Kruszyńska}
+\date{\23012024}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Krótkie streszczenie pracy.
+\end{abstract}
+
+\section{Wprowadzenie}
+Wprowadzenie do tematu Twojej pracy.
+
+\section{Rozdział Pierwszy}
+\subsection{Sekcja 1.1}
+Tekst tego rozdziału.
+
+\subsection{Sekcja 1.2}
+Inny fragment tekstu.
+
+\section{Rozdział Drugi}
+\subsection{Sekcja 2.1}
+Więcej tekstu.
+
+\subsection{Sekcja 2.2}
+I kolejna część tekstu.
+
+\section{Matematyka w LaTeX}
+Przykład zastosowania trybu matematycznego:
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+\section{Rysunki}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{rysunek1.png}
+    \caption{Pierwszy rysunek}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{rysunek2.png}
+        \caption{Drugi rysunek}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        Tekst skomponowany z rysunkiem:
+        \begin{itemize}
+            \item Punkt 1
+            \item Punkt 2
+        \end{itemize}
+    \end{minipage}
+\end{figure}
+
+\section{Tabela}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Kolumna 1 & Kolumna 2 \\
+        \hline
+        Wiersz 1 & Wartość 1 \\
+        Wiersz 2 & Wartość 2 \\
+        \hline
+    \end{tabular}
+    \caption{Tabela odnosząca się do tekstu artykułu.}
+\end{table}
+
+\section{Odniesienia}
+Odniesienie do rysunku: Rysunek \ref{rys:rysunek1} przedstawia...
+
+Odniesienie do tabeli: Tabela \ref{tab:tabela1} zawiera...
+
+\section{Podsumowanie}
+Podsumowanie Twojej pracy.
+
+\begin{thebibliography}{99}
+    \bibitem{autor1} Nazwisko, Imię. \emph{Tytuł Publikacji}. Wydawnictwo, Rok.
+    \bibitem{autor2} Nazwisko, Imię. \emph{Tytuł Innej Publikacji}. Wydawnictwo, Rok.
+\end{thebibliography}
+
+\end{document}
